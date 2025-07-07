@@ -1,0 +1,233 @@
+{
+	"elements": [
+		{
+			"electromotive_force": 220,
+			"initial_angle": 0,
+			"r1": 1.2701705922,
+			"x1": 0,
+			"r2": 1.2701705922,
+			"x2": 0,
+			"r0": 10000000000,
+			"x0": 10000000000,
+			"isolated": true,
+			"t_a": 0,
+			"gridModeMax": true,
+			"Calc_params": true,
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-"
+			},
+			"Nodes": [
+				1
+			],
+			"Name": "S1",
+			"Substation": null,
+			"Type": "system",
+			"id": "31146140-ce0c-454c-bb99-786c442ab669"
+		},
+		{
+			"states": [
+				{
+					"enabled": true,
+					"time": 0,
+					"AllPhase": true,
+					"AisClosed": true,
+					"BisClosed": true,
+					"CisClosed": true
+				}
+			],
+			"v_rated": 220,
+			"i_rated": 1000,
+			"t_close": 0.45,
+			"t_open": 0.5,
+			"Name": "Q1",
+			"Substation": null,
+			"title": "ВВ-220",
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-"
+			},
+			"Nodes": [
+				2,
+				1
+			],
+			"Type": "breaker",
+			"id": "da73fcc4-3c28-46ff-8422-2e02caca0fdb"
+		},
+		{
+			"v_rated": 220,
+			"r1": 20.4303075552,
+			"x1": 40.6527997677,
+			"r0": 35.0532422131,
+			"x0": 161.212875657,
+			"b1": 284.5229009775,
+			"b0": 161.3853814353,
+			"ic1": 36.1392621634,
+			"c1": 0.9056645223,
+			"ic0": 61.4960896539,
+			"c0": 0.513705624,
+			"line_length": 100,
+			"long_line": false,
+			"Calc_params": true,
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-",
+				"distance_unit": "%",
+				"distance": 50
+			},
+			"Nodes": [
+				2,
+				3
+			],
+			"Name": "OL1",
+			"Substation": null,
+			"Type": "overhead_line",
+			"id": "54be6c74-23e0-4f5c-b51f-466fc0acf847"
+		},
+		{
+			"states": [
+				{
+					"enabled": true,
+					"time": 0,
+					"AllPhase": true,
+					"AisClosed": true,
+					"BisClosed": true,
+					"CisClosed": true
+				}
+			],
+			"v_rated": 220,
+			"i_rated": 1000,
+			"t_close": 0.45,
+			"t_open": 0.5,
+			"Name": "Q2",
+			"Substation": null,
+			"title": "ВВ-220",
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-"
+			},
+			"Nodes": [
+				4,
+				3
+			],
+			"Type": "breaker",
+			"id": "7098bbcf-22ac-494f-a083-d2b3c616e46f"
+		},
+		{
+			"electromotive_force": 8.6e-9,
+			"initial_angle": 92.0657048467,
+			"r": 4653846.153889245,
+			"x": 930769.2305880088,
+			"Calc_params": true,
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-"
+			},
+			"Nodes": [
+				4
+			],
+			"Name": "L1",
+			"Substation": null,
+			"Type": "load",
+			"id": "bd5386d5-e273-4561-a6d7-2940cdc8c048"
+		},
+		{
+			"Name": "K",
+			"faults": {
+				"states": [
+					{
+						"topo": {
+							"A0": [
+								0,
+								0
+							],
+							"B0": [
+								0,
+								0
+							],
+							"C0": [
+								0,
+								0
+							]
+						},
+						"enabled": true,
+						"caption": "ABC0",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				]
+			},
+			"Nodes": [
+				4
+			],
+			"Substation": null,
+			"Type": "short_circuit",
+			"id": "9efbdde1-954e-408c-82bc-309d5622a0d8"
+		}
+	],
+	"nodes": 5
+}
