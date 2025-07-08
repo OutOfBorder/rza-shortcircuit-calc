@@ -1,8 +1,11 @@
 import requests
+from dotenv import load_dotenv
+import os
 
-# 🔐 Учетные данные для входа
-username = "OutOfBorder@mail.ru"
-password = "345346Tula"
+# 📥 Загрузка переменных из .env
+load_dotenv()
+username = os.getenv("USERNAME")
+password = os.getenv("PASSWORD")
 
 # 📡 URL-адреса
 login_url = "https://labrza.ru/api/v1/auth/login"
