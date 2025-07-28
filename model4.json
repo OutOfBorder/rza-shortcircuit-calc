@@ -1,11 +1,12 @@
+
 {
 	"elements": [
 		{
-			"electromotive_force": 220,
+			"electromotive_force": 110,
 			"initial_angle": 0,
-			"r1": 1.2701705922,
+			"r1": 5.7735026919,
 			"x1": 0,
-			"r2": 1.2701705922,
+			"r2": 5.7735026919,
 			"x2": 0,
 			"r0": 10000000000,
 			"x0": 10000000000,
@@ -30,12 +31,12 @@
 				"point": "-"
 			},
 			"Nodes": [
-				1
+				3
 			],
 			"Name": "S1",
 			"Substation": null,
 			"Type": "system",
-			"id": "31146140-ce0c-454c-bb99-786c442ab669"
+			"id": "592ca15b-c8ad-4341-adf2-971047a98f6c"
 		},
 		{
 			"states": [
@@ -48,96 +49,13 @@
 					"CisClosed": true
 				}
 			],
-			"v_rated": 220,
+			"v_rated": 110,
 			"i_rated": 1000,
-			"t_close": 0.45,
-			"t_open": 0.5,
+			"t_close": 0.3,
+			"t_open": 0.07,
 			"Name": "Q1",
 			"Substation": null,
-			"title": "ВВ-220",
-			"faults": {
-				"states": [
-					{
-						"topo": {},
-						"enabled": true,
-						"caption": "-",
-						"ozz": {
-							"ozz_model": "base",
-							"base_params": {},
-							"enabled": false
-						},
-						"time": 0
-					}
-				],
-				"point": "-"
-			},
-			"Nodes": [
-				2,
-				1
-			],
-			"Type": "breaker",
-			"id": "da73fcc4-3c28-46ff-8422-2e02caca0fdb"
-		},
-		{
-			"v_rated": 220,
-			"r1": 20.4303075552,
-			"x1": 40.6527997677,
-			"r0": 35.0532422131,
-			"x0": 161.212875657,
-			"b1": 284.5229009775,
-			"b0": 161.3853814353,
-			"ic1": 36.1392621634,
-			"c1": 0.9056645223,
-			"ic0": 61.4960896539,
-			"c0": 0.513705624,
-			"line_length": 100,
-			"long_line": false,
-			"Calc_params": true,
-			"faults": {
-				"states": [
-					{
-						"topo": {},
-						"enabled": true,
-						"caption": "-",
-						"ozz": {
-							"ozz_model": "base",
-							"base_params": {},
-							"enabled": false
-						},
-						"time": 0
-					}
-				],
-				"point": "-",
-				"distance_unit": "%",
-				"distance": 50
-			},
-			"Nodes": [
-				2,
-				3
-			],
-			"Name": "OL1",
-			"Substation": null,
-			"Type": "overhead_line",
-			"id": "54be6c74-23e0-4f5c-b51f-466fc0acf847"
-		},
-		{
-			"states": [
-				{
-					"enabled": true,
-					"time": 0,
-					"AllPhase": true,
-					"AisClosed": true,
-					"BisClosed": true,
-					"CisClosed": true
-				}
-			],
-			"v_rated": 220,
-			"i_rated": 1000,
-			"t_close": 0.45,
-			"t_open": 0.5,
-			"Name": "Q2",
-			"Substation": null,
-			"title": "ВВ-220",
+			"title": "ВВК-110Б-20",
 			"faults": {
 				"states": [
 					{
@@ -159,13 +77,144 @@
 				3
 			],
 			"Type": "breaker",
-			"id": "7098bbcf-22ac-494f-a083-d2b3c616e46f"
+			"id": "ea1cc777-b738-4528-9a6e-9036ff608692"
 		},
 		{
-			"electromotive_force": 8.6e-9,
-			"initial_angle": 92.0657048467,
-			"r": 4653846.153889245,
-			"x": 930769.2305880088,
+			"v_rated": 110,
+			"r1": 2.0430763603,
+			"x1": 3.7828186464,
+			"r0": 3.4232009302,
+			"x0": 12.7090545106,
+			"b1": 30.4606261768,
+			"b0": 16.3591186407,
+			"ic1": 1.9345095795,
+			"c1": 0.0969591845,
+			"ic0": 3.1168307118,
+			"c0": 0.0520726919,
+			"line_length": 10,
+			"long_line": false,
+			"Calc_params": true,
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-",
+				"distance_unit": "%",
+				"distance": 50
+			},
+			"Nodes": [
+				4,
+				1
+			],
+			"Name": "OL1",
+			"Substation": null,
+			"Type": "overhead_line",
+			"id": "ebf05a81-1f54-4d0a-9282-4dba611573b6"
+		},
+		{
+			"states": [
+				{
+					"enabled": true,
+					"time": 0,
+					"AllPhase": true,
+					"AisClosed": true,
+					"BisClosed": true,
+					"CisClosed": true
+				}
+			],
+			"v_rated": 110,
+			"i_rated": 1000,
+			"t_close": 0.3,
+			"t_open": 0.07,
+			"Name": "Q2",
+			"Substation": null,
+			"title": "ВВК-110Б-20",
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-"
+			},
+			"Nodes": [
+				5,
+				6
+			],
+			"Type": "breaker",
+			"id": "2be302a6-8deb-4901-9fa2-a662e96023df"
+		},
+		{
+			"states": [
+				{
+					"enabled": true,
+					"time": 0,
+					"AllPhase": true,
+					"AisClosed": true,
+					"BisClosed": true,
+					"CisClosed": true
+				}
+			],
+			"v_rated": 110,
+			"i_rated": 1000,
+			"t_close": 0.3,
+			"t_open": 0.07,
+			"Name": "Q3",
+			"Substation": null,
+			"title": "ВВК-110Б-20",
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-"
+			},
+			"Nodes": [
+				7,
+				8
+			],
+			"Type": "breaker",
+			"id": "faa62589-b737-4c20-ac28-3c9e0e4c3446"
+		},
+		{
+			"scheme_type_hv": "Y",
+			"scheme_type_lv": "D",
+			"scheme_group_number": "11",
+			"v_rated_hv": 115,
+			"v_rated_lv": 10,
+			"r": 0.333207357,
+			"x": 220.4164148091,
+			"r_neutral": 0,
+			"x_neutral": 0,
+			"g_m": 0,
+			"b_m": 0,
 			"Calc_params": true,
 			"faults": {
 				"states": [
@@ -184,18 +233,285 @@
 				"point": "-"
 			},
 			"Nodes": [
-				4
+				7,
+				2
+			],
+			"Name": "T12",
+			"Substation": null,
+			"Type": "transformer2",
+			"id": "3471c75e-39fd-4954-a197-58201cd60065"
+		},
+		{
+			"states": [
+				{
+					"enabled": true,
+					"time": 0,
+					"AllPhase": true,
+					"AisClosed": true,
+					"BisClosed": true,
+					"CisClosed": true
+				}
+			],
+			"v_rated": 10,
+			"i_rated": 630,
+			"t_close": 0.1,
+			"t_open": 0.05,
+			"Name": "Q4",
+			"Substation": null,
+			"title": "ВВТЭ-10-10",
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-"
+			},
+			"Nodes": [
+				9,
+				2
+			],
+			"Type": "breaker",
+			"id": "642fd595-ecf3-4811-8291-1361451dce37"
+		},
+		{
+			"electromotive_force": 5e-10,
+			"initial_angle": 139.3234853698,
+			"r": 1.1337857195,
+			"x": 0.0011312147,
+			"Calc_params": true,
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-"
+			},
+			"Nodes": [
+				9
 			],
 			"Name": "L1",
 			"Substation": null,
 			"Type": "load",
-			"id": "bd5386d5-e273-4561-a6d7-2940cdc8c048"
+			"id": "a1f281cc-77fb-41ff-98d4-7f44237e6c00"
+		},
+		{
+			"scheme_type_hv": "Y",
+			"scheme_type_lv": "D",
+			"scheme_group_number": "11",
+			"v_rated_hv": 115,
+			"v_rated_lv": 10,
+			"r": 2.116,
+			"x": 343.8434891691,
+			"r_neutral": 0,
+			"x_neutral": 0,
+			"g_m": 0,
+			"b_m": 0,
+			"Calc_params": true,
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-"
+			},
+			"Nodes": [
+				5,
+				10
+			],
+			"Name": "T1",
+			"Substation": null,
+			"Type": "transformer2",
+			"id": "db849046-4d20-4236-97d6-7e1136ee9445"
+		},
+		{
+			"states": [
+				{
+					"enabled": true,
+					"time": 0,
+					"AllPhase": true,
+					"AisClosed": true,
+					"BisClosed": true,
+					"CisClosed": true
+				}
+			],
+			"v_rated": 10,
+			"i_rated": 630,
+			"t_close": 0.1,
+			"t_open": 0.05,
+			"Name": "Q5",
+			"Substation": null,
+			"title": "ВВТЭ-10-10",
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-"
+			},
+			"Nodes": [
+				11,
+				10
+			],
+			"Type": "breaker",
+			"id": "96b37505-87d2-4229-b5bc-44aedb680f49"
+		},
+		{
+			"electromotive_force": 5e-10,
+			"initial_angle": 128.0163417269,
+			"r": 28.0000000011,
+			"x": 3.9999999989,
+			"Calc_params": true,
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-"
+			},
+			"Nodes": [
+				11
+			],
+			"Name": "L2",
+			"Substation": null,
+			"Type": "load",
+			"id": "3cfffef0-a30c-4b96-a4d1-192138583fd5"
+		},
+		{
+			"v_rated": 110,
+			"r1": 102.1538180152,
+			"x1": 189.1409323185,
+			"r0": 171.1600465113,
+			"x0": 635.4527255299,
+			"b1": 1523.0313088381,
+			"b0": 817.9559320333,
+			"ic1": 96.7254789756,
+			"c1": 4.8479592257,
+			"ic0": 155.8415355897,
+			"c0": 2.6036345963,
+			"line_length": 500,
+			"long_line": false,
+			"Calc_params": true,
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-",
+				"distance_unit": "%",
+				"distance": 50
+			},
+			"Nodes": [
+				1,
+				8
+			],
+			"Name": "OL1",
+			"Substation": null,
+			"Type": "overhead_line",
+			"id": "490492ef-a767-4cfe-9f5b-56ce429faa25"
+		},
+		{
+			"v_rated": 110,
+			"r1": 2.0430763603,
+			"x1": 3.7828186464,
+			"r0": 3.4232009302,
+			"x0": 12.7090545106,
+			"b1": 30.4606261768,
+			"b0": 16.3591186407,
+			"ic1": 1.9345095795,
+			"c1": 0.0969591845,
+			"ic0": 3.1168307118,
+			"c0": 0.0520726919,
+			"line_length": 10,
+			"long_line": false,
+			"Calc_params": true,
+			"faults": {
+				"states": [
+					{
+						"topo": {},
+						"enabled": true,
+						"caption": "-",
+						"ozz": {
+							"ozz_model": "base",
+							"base_params": {},
+							"enabled": false
+						},
+						"time": 0
+					}
+				],
+				"point": "-",
+				"distance_unit": "%",
+				"distance": 50
+			},
+			"Nodes": [
+				6,
+				1
+			],
+			"Name": "OL1",
+			"Substation": null,
+			"Type": "overhead_line",
+			"id": "ff7050dc-07c4-47dd-915a-3e8ee13bda4c"
 		},
 		{
 			"Name": "K",
 			"faults": {
 				"states": [
 					{
+						"enabled": true,
+						"caption": "ABC0",
 						"topo": {
 							"A0": [
 								0,
@@ -210,8 +526,29 @@
 								0
 							]
 						},
+						"time": 0
+					}
+				]
+			},
+			"Nodes": [
+				9
+			],
+			"Substation": null,
+			"Type": "short_circuit",
+			"id": "c894ac8b-0581-4555-a91c-97d99bd85a55"
+		},
+		{
+			"electromotive_force": 5e-10,
+			"initial_angle": 139.3234853698,
+			"r": 1.1337857195,
+			"x": 0.0011312147,
+			"Calc_params": true,
+			"faults": {
+				"states": [
+					{
+						"topo": {},
 						"enabled": true,
-						"caption": "ABC0",
+						"caption": "-",
 						"ozz": {
 							"ozz_model": "base",
 							"base_params": {},
@@ -219,15 +556,17 @@
 						},
 						"time": 0
 					}
-				]
+				],
+				"point": "-"
 			},
 			"Nodes": [
-				4
+				2
 			],
+			"Name": "L1",
 			"Substation": null,
-			"Type": "short_circuit",
-			"id": "9efbdde1-954e-408c-82bc-309d5622a0d8"
+			"Type": "load",
+			"id": "14b32d66-9f61-4aaf-abcb-2e4630073e6d"
 		}
 	],
-	"nodes": 5
+	"nodes": 12
 }

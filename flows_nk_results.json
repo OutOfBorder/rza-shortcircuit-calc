@@ -1,0 +1,17 @@
+{
+  "('ea1cc777-b738-4528-9a6e-9036ff608692',)": {
+    "error": "405 Client Error: Method Not Allowed for url: https://labrza.ru/api/v1/general/flows/calc"
+  },
+  "('2be302a6-8deb-4901-9fa2-a662e96023df',)": {
+    "error": "405 Client Error: Method Not Allowed for url: https://labrza.ru/api/v1/general/flows/calc"
+  },
+  "('faa62589-b737-4c20-ac28-3c9e0e4c3446',)": {
+    "error": "405 Client Error: Method Not Allowed for url: https://labrza.ru/api/v1/general/flows/calc"
+  },
+  "('642fd595-ecf3-4811-8291-1361451dce37',)": {
+    "error": "405 Client Error: Method Not Allowed for url: https://labrza.ru/api/v1/general/flows/calc"
+  },
+  "('96b37505-87d2-4229-b5bc-44aedb680f49',)": {
+    "error": "405 Client Error: Method Not Allowed for url: https://labrza.ru/api/v1/general/flows/calc"
+  }
+}
