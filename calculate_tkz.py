@@ -25,9 +25,9 @@ def load_model(path="model4.json"):
 def find_breakers(model):
     """Возвращает [(id, name), ...] для Type=='breaker'."""
     out = []
-    for el in model.get("elements", []):
+    for el_id, el in model.get("elements", {}).items():
         if el.get("Type") == "breaker":
-            out.append((el["id"], el.get("Name", el["id"])))
+            out.append((el_id, el.get("Name", el_id)))
     return out
 
 def extract_currents(resp_json):
@@ -70,8 +70,8 @@ def main():
     auth_url = "https://labrza.ru/api/v1/auth/login"
     r = session.post(
         auth_url,
-        data={"grant_type":"password","username":USER,"password":PASS},
-        headers={"Content-Type":"application/x-www-form-urlencoded"}
+        data={"grant_type": "password", "username": USER, "password": PASS},
+        headers={"Content-Type": "application/x-www-form-urlencoded"}
     )
     r.raise_for_status()
     token = r.json()["access_token"]
@@ -100,7 +100,7 @@ def main():
 
     # --- 1) «Нормальный режим» через tkzf/calc (КЗ отключено) ---
     m_normal = deepcopy(model)
-    for el in m_normal["elements"]:
+    for el in m_normal["elements"].values():
         if el.get("Type") == "short_circuit":
             el["faults"]["states"][0]["enabled"] = False
 
@@ -152,8 +152,9 @@ def main():
         print(f"⚙️ [{idx}/{len(combos)}] Отключаем: {human}")
 
         m2 = deepcopy(model)
-        for el in m2["elements"]:
-            if el.get("Type") == "breaker" and el["id"] in combo:
+        for el_id in combo:
+            el = m2["elements"].get(el_id)
+            if el and el.get("Type") == "breaker":
                 st = el["states"][0]
                 st["AisClosed"] = st["BisClosed"] = st["CisClosed"] = False
 

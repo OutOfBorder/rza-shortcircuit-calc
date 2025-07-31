@@ -1,7 +1,7 @@
 
 {
-	"elements": [
-		{
+	"elements": {
+		"592ca15b-c8ad-4341-adf2-971047a98f6c": {
 			"electromotive_force": 110,
 			"initial_angle": 0,
 			"r1": 5.7735026919,
@@ -38,7 +38,7 @@
 			"Type": "system",
 			"id": "592ca15b-c8ad-4341-adf2-971047a98f6c"
 		},
-		{
+		"ea1cc777-b738-4528-9a6e-9036ff608692": {
 			"states": [
 				{
 					"enabled": true,
@@ -79,7 +79,7 @@
 			"Type": "breaker",
 			"id": "ea1cc777-b738-4528-9a6e-9036ff608692"
 		},
-		{
+		"ebf05a81-1f54-4d0a-9282-4dba611573b6": {
 			"v_rated": 110,
 			"r1": 2.0430763603,
 			"x1": 3.7828186464,
@@ -121,7 +121,7 @@
 			"Type": "overhead_line",
 			"id": "ebf05a81-1f54-4d0a-9282-4dba611573b6"
 		},
-		{
+		"2be302a6-8deb-4901-9fa2-a662e96023df": {
 			"states": [
 				{
 					"enabled": true,
@@ -162,7 +162,7 @@
 			"Type": "breaker",
 			"id": "2be302a6-8deb-4901-9fa2-a662e96023df"
 		},
-		{
+		"faa62589-b737-4c20-ac28-3c9e0e4c3446": {
 			"states": [
 				{
 					"enabled": true,
@@ -203,7 +203,7 @@
 			"Type": "breaker",
 			"id": "faa62589-b737-4c20-ac28-3c9e0e4c3446"
 		},
-		{
+		"3471c75e-39fd-4954-a197-58201cd60065": {
 			"scheme_type_hv": "Y",
 			"scheme_type_lv": "D",
 			"scheme_group_number": "11",
@@ -241,7 +241,7 @@
 			"Type": "transformer2",
 			"id": "3471c75e-39fd-4954-a197-58201cd60065"
 		},
-		{
+		"642fd595-ecf3-4811-8291-1361451dce37": {
 			"states": [
 				{
 					"enabled": true,
@@ -282,7 +282,7 @@
 			"Type": "breaker",
 			"id": "642fd595-ecf3-4811-8291-1361451dce37"
 		},
-		{
+		"a1f281cc-77fb-41ff-98d4-7f44237e6c00": {
 			"electromotive_force": 5e-10,
 			"initial_angle": 139.3234853698,
 			"r": 1.1337857195,
@@ -312,7 +312,7 @@
 			"Type": "load",
 			"id": "a1f281cc-77fb-41ff-98d4-7f44237e6c00"
 		},
-		{
+		"db849046-4d20-4236-97d6-7e1136ee9445": {
 			"scheme_type_hv": "Y",
 			"scheme_type_lv": "D",
 			"scheme_group_number": "11",
@@ -350,7 +350,7 @@
 			"Type": "transformer2",
 			"id": "db849046-4d20-4236-97d6-7e1136ee9445"
 		},
-		{
+		"96b37505-87d2-4229-b5bc-44aedb680f49": {
 			"states": [
 				{
 					"enabled": true,
@@ -391,7 +391,7 @@
 			"Type": "breaker",
 			"id": "96b37505-87d2-4229-b5bc-44aedb680f49"
 		},
-		{
+		"3cfffef0-a30c-4b96-a4d1-192138583fd5": {
 			"electromotive_force": 5e-10,
 			"initial_angle": 128.0163417269,
 			"r": 28.0000000011,
@@ -421,7 +421,7 @@
 			"Type": "load",
 			"id": "3cfffef0-a30c-4b96-a4d1-192138583fd5"
 		},
-		{
+		"490492ef-a767-4cfe-9f5b-56ce429faa25": {
 			"v_rated": 110,
 			"r1": 102.1538180152,
 			"x1": 189.1409323185,
@@ -463,7 +463,7 @@
 			"Type": "overhead_line",
 			"id": "490492ef-a767-4cfe-9f5b-56ce429faa25"
 		},
-		{
+		"ff7050dc-07c4-47dd-915a-3e8ee13bda4c": {
 			"v_rated": 110,
 			"r1": 2.0430763603,
 			"x1": 3.7828186464,
@@ -505,7 +505,7 @@
 			"Type": "overhead_line",
 			"id": "ff7050dc-07c4-47dd-915a-3e8ee13bda4c"
 		},
-		{
+		"c894ac8b-0581-4555-a91c-97d99bd85a55": {
 			"Name": "K",
 			"faults": {
 				"states": [
@@ -531,13 +531,13 @@
 				]
 			},
 			"Nodes": [
-				9
+				12
 			],
 			"Substation": null,
 			"Type": "short_circuit",
 			"id": "c894ac8b-0581-4555-a91c-97d99bd85a55"
 		},
-		{
+		"14b32d66-9f61-4aaf-abcb-2e4630073e6d": {
 			"electromotive_force": 5e-10,
 			"initial_angle": 139.3234853698,
 			"r": 1.1337857195,
@@ -567,6 +567,6 @@
 			"Type": "load",
 			"id": "14b32d66-9f61-4aaf-abcb-2e4630073e6d"
 		}
-	],
-	"nodes": 12
+	},
+	"nodes": 13
 }
