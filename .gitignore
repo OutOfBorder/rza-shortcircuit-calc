@@ -1,1 +1,22 @@
 ".env" 
+# Игнорируем виртуальное окружение
+venv/
+ENV/
+.env/
+
+# Конфигурационные файлы
+*.env
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Логи
+*.log
+
+# Файлы ОС
+.DS_Store
+Thumbs.db
